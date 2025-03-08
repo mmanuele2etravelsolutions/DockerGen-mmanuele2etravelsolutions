@@ -4,7 +4,7 @@
 **DockerGen** es una herramienta interactiva de línea de comandos para generar archivos `docker-compose.yml` de manera guiada y personalizada.  
 Utiliza una interfaz enriquecida con **rich** y se encarga de instalar automáticamente las dependencias necesarias (*rich* y *PyYAML*), sin requerir un archivo `requirements.txt`.
 
-![Banner de DockerGen](img/banner.png)
+![Ejemplo DockerGen](img/foto.png)
 
 ## Características
 

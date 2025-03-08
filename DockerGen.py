@@ -30,17 +30,17 @@ from rich.table import Table
 console = Console()
 
 def print_banner():
-    """ Muestra el banner de DockerGen """
+    """ Muestra el banner de DockerGen"""
     banner = r"""
-  ____             _              ____            
- |  _ \  ___   ___| | _____ _ __ / ___| ___ _ __  
- | | | |/ _ \ / __| |/ / _ \ '__| |  _ / _ \ '_ \ 
+  ____             _              ____
+ |  _ \  ___   ___| | _____ _ __ / ___| ___ _ __
+ | | | |/ _ \ / __| |/ / _ \ '__| |  _ / _ \ '_ \
  | |_| | (_) | (__|   <  __/ |  | |_| |  __/ | | |
  |____/ \___/ \___|_|\_\___|_|   \____|\___|_| |_|
 
 ---- By: MARH ------------------------------------
     """
-    console.print(Panel(banner, title="[bold blue]DockerGen[/bold blue]", border_style="bright_blue"))
+    console.print(Panel(banner, border_style="", expand=False))
 
 def get_non_empty_input(prompt_message: str) -> str:
     """ Solicita al usuario una entrada que no esté vacía. """
@@ -99,7 +99,7 @@ def input_service():
     Recopila de manera interactiva la configuración de un servicio.
     Retorna el nombre del servicio y su configuración como diccionario.
     """
-    console.print(Panel("Configuración de un nuevo servicio", style="bold blue"))
+    console.print(Panel("Configuración de un nuevo servicio", style="bold blue", expand=False))
     name = get_non_empty_input("Ingrese el nombre del servicio:")
     service = {}
 
@@ -214,7 +214,8 @@ def preview_configuration(compose_config: dict):
 
 def main():
     print_banner()
-    console.print(Panel("Generador Interactivo de Docker Compose - DockerGen", style="bold magenta"))
+    # Panel principal rosa ajustado al tamaño del texto (expand=False)
+    console.print(Panel("Generador Interactivo de Docker Compose", style="bold magenta", expand=False))
     compose_version = console.input("[bold green]Ingrese la versión de docker-compose (por defecto 3.8):[/bold green] ").strip() or "3.8"
 
     services = {}
@@ -233,7 +234,8 @@ def main():
     if all_networks:
         compose_config["networks"] = {net: {} for net in all_networks}
 
-    console.print(Panel("Vista previa de la configuración", style="bold blue"))
+    # Imprimir título de vista previa sin panel azul
+    console.print("[bold magenta]Vista previa de la configuración:[/bold magenta]")
     preview_configuration(compose_config)
 
     if not Confirm.ask("[bold green]¿Desea continuar y guardar el archivo?[/bold green]"):
