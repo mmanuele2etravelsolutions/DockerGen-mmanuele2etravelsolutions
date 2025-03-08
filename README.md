@@ -41,7 +41,7 @@ source venv/bin/activate  # En Windows: venv\Scripts\activate
 # Uso
 Para iniciar DockerGen, ejecuta:
 ```bash
-python3 dockergen.py
+python3 DockerGen.py
 ```
 # Uso del Archivo Generado
 Una vez generado el archivo docker-compose.yml, puedes usarlo con Docker Compose:
