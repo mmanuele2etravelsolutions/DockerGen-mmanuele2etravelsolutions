@@ -1,5 +1,5 @@
 
-# DockerGen
+# 🐳 DockerGen
 
 **DockerGen** es una herramienta interactiva de línea de comandos para generar archivos `docker-compose.yml` de manera guiada y personalizada.  
 Utiliza una interfaz enriquecida con **rich** y se encarga de instalar automáticamente las dependencias necesarias (*rich* y *PyYAML*).
@@ -14,7 +14,7 @@ Utiliza una interfaz enriquecida con **rich** y se encarga de instalar automáti
 - **Banner Personalizado:** Al iniciar, se muestra un banner con el nombre **DockerGen**.
 - **Instalación Automática de Dependencias:** No es necesario instalar manualmente *rich* o *PyYAML*; DockerGen se encarga de ello.
 
-# Requisitos
+# ⚠️ Requisitos
 
 - **Python 3.7+**  
   Verifica la versión ejecutando:
@@ -24,7 +24,7 @@ Utiliza una interfaz enriquecida con **rich** y se encarga de instalar automáti
 Docker y Docker Compose
 Para utilizar el archivo generado, asegúrate de tener Docker y Docker Compose instalados.
 
-# Instalación
+# 🛠️ Instalación
 Clona el repositorio o descarga el código fuente:
 
 ```bash
@@ -38,7 +38,7 @@ python3 -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 ```
 
-# Uso
+# 🖥️​ Uso
 Para iniciar DockerGen, ejecuta:
 ```bash
 python3 DockerGen.py
