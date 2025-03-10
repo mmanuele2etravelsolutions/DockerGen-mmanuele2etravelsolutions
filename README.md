@@ -11,7 +11,6 @@ Utiliza una interfaz enriquecida con **rich** y se encarga de instalar automáti
 - **Generación Interactiva:** Configura múltiples servicios de Docker con opciones avanzadas (build context, mapeo de puertos, variables de entorno, volúmenes, redes, dependencias y límites de recursos).
 - **Vista Previa:** Muestra un resumen interactivo de la configuración antes de guardar.
 - **Manejo de Archivos:** Verifica si el archivo de salida ya existe y solicita confirmación para sobrescribirlo.
-- **Banner Personalizado:** Al iniciar, se muestra un banner con el nombre **DockerGen**.
 - **Instalación Automática de Dependencias:** No es necesario instalar manualmente *rich* o *PyYAML*; DockerGen se encarga de ello.
 
 # ⚠️ Requisitos
