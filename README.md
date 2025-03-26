@@ -29,7 +29,7 @@ Clona el repositorio o descarga el código fuente:
 ```bash
 git clone https://github.com/Mayky23/DockerGen.git
 cd DockerGen
-pip3 install rich (Tener en cuenta si presentar error)
+pip3 install rich (Tener en cuenta por si presenta error)
 ```
 
 (Opcional) Crea un entorno virtual:
